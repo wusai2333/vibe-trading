@@ -1,0 +1,2215 @@
+{
+ "status": "ok",
+ "zoo": "qlib158",
+ "universe": "csi300-akshare30",
+ "period": "2018-01-01/2025-12-31",
+ "n_alphas_tested": 154,
+ "multiple_testing": {
+  "applicable": true,
+  "n_trials": 154,
+  "best_id": "qlib158_min5",
+  "best_ir": 0.1035,
+  "ir_dispersion": 0.047021,
+  "expected_max_ir_under_null": 0.125966,
+  "ir_haircut": -0.022466,
+  "ic_observations": 1937,
+  "statistic": "ic_information_ratio",
+  "deflated_probability": 0.1621,
+  "survives_deflation": false
+ },
+ "n_skipped": 0,
+ "alive": 0,
+ "reversed": 10,
+ "dead": 144,
+ "by_theme": {
+  "momentum": {
+   "alive": 0,
+   "reversed": 3,
+   "dead": 72,
+   "count": 75
+  },
+  "reversal": {
+   "alive": 0,
+   "reversed": 0,
+   "dead": 30,
+   "count": 30
+  },
+  "volume": {
+   "alive": 0,
+   "reversed": 1,
+   "dead": 39,
+   "count": 40
+  },
+  "microstructure": {
+   "alive": 0,
+   "reversed": 7,
+   "dead": 12,
+   "count": 19
+  },
+  "volatility": {
+   "alive": 0,
+   "reversed": 0,
+   "dead": 30,
+   "count": 30
+  }
+ },
+ "top5_by_ir": [
+  {
+   "id": "qlib158_min5",
+   "ic_mean": 0.028044,
+   "ir": 0.1035,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 5) / \\\\mathrm{close}",
+   "category": "dead"
+  },
+  {
+   "id": "qlib158_kup2",
+   "ic_mean": 0.022435,
+   "ir": 0.0967,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{high} - \\\\max(\\\\mathrm{open}, \\\\mathrm{close})) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "category": "dead"
+  },
+  {
+   "id": "qlib158_ma5",
+   "ic_mean": 0.023688,
+   "ir": 0.0832,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "category": "dead"
+  },
+  {
+   "id": "qlib158_qtld5",
+   "ic_mean": 0.022714,
+   "ir": 0.0816,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "category": "dead"
+  },
+  {
+   "id": "qlib158_min10",
+   "ic_mean": 0.020513,
+   "ir": 0.0759,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 10) / \\\\mathrm{close}",
+   "category": "dead"
+  }
+ ],
+ "dead_examples": [
+  {
+   "id": "qlib158_ksft2",
+   "ic_mean": -0.047257,
+   "ir": -0.1833,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(2\\\\,\\\\mathrm{close} - \\\\mathrm{high} - \\\\mathrm{low}) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "category": "reversed"
+  },
+  {
+   "id": "qlib158_ksft",
+   "ic_mean": -0.045965,
+   "ir": -0.1675,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(2\\\\,\\\\mathrm{close} - \\\\mathrm{high} - \\\\mathrm{low}) / \\\\mathrm{open}",
+   "category": "reversed"
+  },
+  {
+   "id": "qlib158_klow",
+   "ic_mean": -0.032566,
+   "ir": -0.1345,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\min(\\\\mathrm{open}, \\\\mathrm{close}) - \\\\mathrm{low}) / \\\\mathrm{open}",
+   "category": "reversed"
+  },
+  {
+   "id": "qlib158_kmid",
+   "ic_mean": -0.03105,
+   "ir": -0.112,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{open}) / \\\\mathrm{open}",
+   "category": "reversed"
+  },
+  {
+   "id": "qlib158_kmid2",
+   "ic_mean": -0.028456,
+   "ir": -0.1063,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{open}) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "category": "reversed"
+  }
+ ],
+ "rows": [
+  {
+   "id": "qlib158_beta20",
+   "ic_mean": 0.00473,
+   "ic_std": 0.295955,
+   "ir": 0.016,
+   "ic_positive_ratio": 0.519,
+   "ic_count": 1921,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close}_t - \\\\mathrm{close}_{{t-20}}) / (20\\\\,\\\\mathrm{close})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_beta60",
+   "ic_mean": 0.009963,
+   "ic_std": 0.320433,
+   "ir": 0.0311,
+   "ic_positive_ratio": 0.513,
+   "ic_count": 1881,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close}_t - \\\\mathrm{close}_{{t-60}}) / (60\\\\,\\\\mathrm{close})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_beta10",
+   "ic_mean": -0.009043,
+   "ic_std": 0.29334,
+   "ir": -0.0308,
+   "ic_positive_ratio": 0.4827,
+   "ic_count": 1931,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close}_t - \\\\mathrm{close}_{{t-10}}) / (10\\\\,\\\\mathrm{close})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_beta5",
+   "ic_mean": -0.019978,
+   "ic_std": 0.286857,
+   "ir": -0.0696,
+   "ic_positive_ratio": 0.4752,
+   "ic_count": 1936,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close}_t - \\\\mathrm{close}_{{t-5}}) / (5\\\\,\\\\mathrm{close})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_beta30",
+   "ic_mean": 0.004809,
+   "ic_std": 0.302955,
+   "ir": 0.0159,
+   "ic_positive_ratio": 0.5165,
+   "ic_count": 1911,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close}_t - \\\\mathrm{close}_{{t-30}}) / (30\\\\,\\\\mathrm{close})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntn5",
+   "ic_mean": 0.00888,
+   "ic_std": 0.254985,
+   "ir": 0.0348,
+   "ic_positive_ratio": 0.5126,
+   "ic_count": 1937,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}<\\\\mathrm{close}_{{-1}}], 5)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntn30",
+   "ic_mean": -0.012139,
+   "ic_std": 0.274841,
+   "ir": -0.0442,
+   "ic_positive_ratio": 0.4796,
+   "ic_count": 1912,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}<\\\\mathrm{close}_{{-1}}], 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntp10",
+   "ic_mean": -0.009129,
+   "ic_std": 0.250545,
+   "ir": -0.0364,
+   "ic_positive_ratio": 0.4922,
+   "ic_count": 1932,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}>\\\\mathrm{close}_{{-1}}], 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntp20",
+   "ic_mean": -0.002738,
+   "ic_std": 0.257345,
+   "ir": -0.0106,
+   "ic_positive_ratio": 0.5088,
+   "ic_count": 1922,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}>\\\\mathrm{close}_{{-1}}], 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntp5",
+   "ic_mean": -0.018442,
+   "ic_std": 0.243123,
+   "ir": -0.0759,
+   "ic_positive_ratio": 0.4812,
+   "ic_count": 1937,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}>\\\\mathrm{close}_{{-1}}], 5)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntn60",
+   "ic_mean": -0.017918,
+   "ic_std": 0.291052,
+   "ir": -0.0616,
+   "ic_positive_ratio": 0.4772,
+   "ic_count": 1882,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}<\\\\mathrm{close}_{{-1}}], 60)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntd20",
+   "ic_mean": 0.004036,
+   "ic_std": 0.266587,
+   "ir": 0.0151,
+   "ic_positive_ratio": 0.5114,
+   "ic_count": 1922,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{CNTP}_20 - \\\\mathrm{CNTN}_20",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntp30",
+   "ic_mean": -0.001292,
+   "ic_std": 0.258797,
+   "ir": -0.005,
+   "ic_positive_ratio": 0.4969,
+   "ic_count": 1912,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}>\\\\mathrm{close}_{{-1}}], 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntn20",
+   "ic_mean": -0.008719,
+   "ic_std": 0.271073,
+   "ir": -0.0322,
+   "ic_positive_ratio": 0.4849,
+   "ic_count": 1922,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}<\\\\mathrm{close}_{{-1}}], 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntd60",
+   "ic_mean": 0.013286,
+   "ic_std": 0.286228,
+   "ir": 0.0464,
+   "ic_positive_ratio": 0.5244,
+   "ic_count": 1882,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{CNTP}_60 - \\\\mathrm{CNTN}_60",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntn10",
+   "ic_mean": -0.003353,
+   "ic_std": 0.262643,
+   "ir": -0.0128,
+   "ic_positive_ratio": 0.4943,
+   "ic_count": 1932,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}<\\\\mathrm{close}_{{-1}}], 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntd10",
+   "ic_mean": -0.00214,
+   "ic_std": 0.257727,
+   "ir": -0.0083,
+   "ic_positive_ratio": 0.4964,
+   "ic_count": 1932,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{CNTP}_10 - \\\\mathrm{CNTN}_10",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntd5",
+   "ic_mean": -0.014205,
+   "ic_std": 0.249775,
+   "ir": -0.0569,
+   "ic_positive_ratio": 0.4786,
+   "ic_count": 1937,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{CNTP}_5 - \\\\mathrm{CNTN}_5",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntd30",
+   "ic_mean": 0.007296,
+   "ic_std": 0.270024,
+   "ir": 0.027,
+   "ic_positive_ratio": 0.5047,
+   "ic_count": 1912,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{CNTP}_30 - \\\\mathrm{CNTN}_30",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cntp60",
+   "ic_mean": 0.004408,
+   "ic_std": 0.275044,
+   "ir": 0.016,
+   "ic_positive_ratio": 0.5037,
+   "ic_count": 1882,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{rolling\\\\_mean}(\\\\mathrm{1}[\\\\mathrm{close}>\\\\mathrm{close}_{{-1}}], 60)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cord20",
+   "ic_mean": -0.019019,
+   "ic_std": 0.253924,
+   "ir": -0.0749,
+   "ic_positive_ratio": 0.4789,
+   "ic_count": 1921,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}/\\\\mathrm{close}_{{-1}}, \\\\log((\\\\mathrm{volume}+1)/(\\\\mathrm{volume}_{{-1}}+1)), 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cord30",
+   "ic_mean": -0.019919,
+   "ic_std": 0.25637,
+   "ir": -0.0777,
+   "ic_positive_ratio": 0.4694,
+   "ic_count": 1911,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}/\\\\mathrm{close}_{{-1}}, \\\\log((\\\\mathrm{volume}+1)/(\\\\mathrm{volume}_{{-1}}+1)), 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cord60",
+   "ic_mean": -0.022363,
+   "ic_std": 0.267174,
+   "ir": -0.0837,
+   "ic_positive_ratio": 0.4657,
+   "ic_count": 1881,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}/\\\\mathrm{close}_{{-1}}, \\\\log((\\\\mathrm{volume}+1)/(\\\\mathrm{volume}_{{-1}}+1)), 60)",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_corr10",
+   "ic_mean": -0.010574,
+   "ic_std": 0.248646,
+   "ir": -0.0425,
+   "ic_positive_ratio": 0.4834,
+   "ic_count": 1932,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, \\\\log(\\\\mathrm{volume}+1), 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_corr20",
+   "ic_mean": -0.012224,
+   "ic_std": 0.257157,
+   "ir": -0.0475,
+   "ic_positive_ratio": 0.4844,
+   "ic_count": 1922,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, \\\\log(\\\\mathrm{volume}+1), 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imax30",
+   "ic_mean": 0.007166,
+   "ic_std": 0.269112,
+   "ir": 0.0266,
+   "ic_positive_ratio": 0.5089,
+   "ic_count": 1910,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 30) / 30",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imax10",
+   "ic_mean": 0.004875,
+   "ic_std": 0.259245,
+   "ir": 0.0188,
+   "ic_positive_ratio": 0.5073,
+   "ic_count": 1930,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 10) / 10",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imax20",
+   "ic_mean": 0.007325,
+   "ic_std": 0.259764,
+   "ir": 0.0282,
+   "ic_positive_ratio": 0.5203,
+   "ic_count": 1920,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 20) / 20",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_corr30",
+   "ic_mean": -0.012604,
+   "ic_std": 0.256997,
+   "ir": -0.049,
+   "ic_positive_ratio": 0.488,
+   "ic_count": 1912,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, \\\\log(\\\\mathrm{volume}+1), 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cord10",
+   "ic_mean": -0.012643,
+   "ic_std": 0.248078,
+   "ir": -0.051,
+   "ic_positive_ratio": 0.4837,
+   "ic_count": 1931,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}/\\\\mathrm{close}_{{-1}}, \\\\log((\\\\mathrm{volume}+1)/(\\\\mathrm{volume}_{{-1}}+1)), 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_cord5",
+   "ic_mean": -0.013542,
+   "ic_std": 0.24551,
+   "ir": -0.0552,
+   "ic_positive_ratio": 0.4793,
+   "ic_count": 1936,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}/\\\\mathrm{close}_{{-1}}, \\\\log((\\\\mathrm{volume}+1)/(\\\\mathrm{volume}_{{-1}}+1)), 5)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_corr5",
+   "ic_mean": -0.00368,
+   "ic_std": 0.235103,
+   "ir": -0.0157,
+   "ic_positive_ratio": 0.4972,
+   "ic_count": 1937,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, \\\\log(\\\\mathrm{volume}+1), 5)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_corr60",
+   "ic_mean": -0.005636,
+   "ic_std": 0.267534,
+   "ir": -0.0211,
+   "ic_positive_ratio": 0.4968,
+   "ic_count": 1882,
+   "theme": [
+    "volume",
+    "microstructure"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, \\\\log(\\\\mathrm{volume}+1), 60)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imax5",
+   "ic_mean": -0.004328,
+   "ic_std": 0.257504,
+   "ir": -0.0168,
+   "ic_positive_ratio": 0.4925,
+   "ic_count": 1933,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 5) / 5",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imax60",
+   "ic_mean": 0.005289,
+   "ic_std": 0.277078,
+   "ir": 0.0191,
+   "ic_positive_ratio": 0.5175,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 60) / 60",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imin30",
+   "ic_mean": -0.009167,
+   "ic_std": 0.258785,
+   "ir": -0.0354,
+   "ic_positive_ratio": 0.4796,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 30) / 30",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imin10",
+   "ic_mean": -0.003403,
+   "ic_std": 0.257367,
+   "ir": -0.0132,
+   "ic_positive_ratio": 0.4842,
+   "ic_count": 1931,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 10) / 10",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imin20",
+   "ic_mean": -0.0049,
+   "ic_std": 0.256915,
+   "ir": -0.0191,
+   "ic_positive_ratio": 0.4823,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 20) / 20",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imin5",
+   "ic_mean": 0.002913,
+   "ic_std": 0.254598,
+   "ir": 0.0114,
+   "ic_positive_ratio": 0.5047,
+   "ic_count": 1930,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 5) / 5",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imin60",
+   "ic_mean": -0.004316,
+   "ic_std": 0.263452,
+   "ir": -0.0164,
+   "ic_positive_ratio": 0.4995,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 60) / 60",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imxd20",
+   "ic_mean": 0.008357,
+   "ic_std": 0.267176,
+   "ir": 0.0313,
+   "ic_positive_ratio": 0.5203,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 20) - \\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 20)) / 20",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_klen",
+   "ic_mean": -0.019484,
+   "ic_std": 0.258422,
+   "ir": -0.0754,
+   "ic_positive_ratio": 0.4585,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{high} - \\\\mathrm{low}) / \\\\mathrm{open}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imxd60",
+   "ic_mean": 0.006388,
+   "ic_std": 0.288328,
+   "ir": 0.0222,
+   "ic_positive_ratio": 0.5154,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 60) - \\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 60)) / 60",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_klow2",
+   "ic_mean": -0.02381,
+   "ic_std": 0.224753,
+   "ir": -0.1059,
+   "ic_positive_ratio": 0.4518,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\min(\\\\mathrm{open}, \\\\mathrm{close}) - \\\\mathrm{low}) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_imxd5",
+   "ic_mean": -0.003023,
+   "ic_std": 0.262206,
+   "ir": -0.0115,
+   "ic_positive_ratio": 0.4822,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 5) - \\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 5)) / 5",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imxd30",
+   "ic_mean": 0.01027,
+   "ic_std": 0.27685,
+   "ir": 0.0371,
+   "ic_positive_ratio": 0.5288,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 30) - \\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 30)) / 30",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_imxd10",
+   "ic_mean": 0.005924,
+   "ic_std": 0.267627,
+   "ir": 0.0221,
+   "ic_positive_ratio": 0.5129,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{ts\\\\_argmax}(\\\\mathrm{high}, 10) - \\\\mathrm{ts\\\\_argmin}(\\\\mathrm{low}, 10)) / 10",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_klow",
+   "ic_mean": -0.032566,
+   "ic_std": 0.242186,
+   "ir": -0.1345,
+   "ic_positive_ratio": 0.4426,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\min(\\\\mathrm{open}, \\\\mathrm{close}) - \\\\mathrm{low}) / \\\\mathrm{open}",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_kmid",
+   "ic_mean": -0.03105,
+   "ic_std": 0.277219,
+   "ir": -0.112,
+   "ic_positive_ratio": 0.4529,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{open}) / \\\\mathrm{open}",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_kmid2",
+   "ic_mean": -0.028456,
+   "ic_std": 0.267657,
+   "ir": -0.1063,
+   "ic_positive_ratio": 0.4549,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{open}) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_ksft",
+   "ic_mean": -0.045965,
+   "ic_std": 0.2745,
+   "ir": -0.1675,
+   "ic_positive_ratio": 0.4199,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(2\\\\,\\\\mathrm{close} - \\\\mathrm{high} - \\\\mathrm{low}) / \\\\mathrm{open}",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_ma30",
+   "ic_mean": 0.000645,
+   "ic_std": 0.299809,
+   "ir": 0.0022,
+   "ic_positive_ratio": 0.4974,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_ksft2",
+   "ic_mean": -0.047257,
+   "ic_std": 0.257827,
+   "ir": -0.1833,
+   "ic_positive_ratio": 0.4127,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(2\\\\,\\\\mathrm{close} - \\\\mathrm{high} - \\\\mathrm{low}) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_kup2",
+   "ic_mean": 0.022435,
+   "ic_std": 0.232101,
+   "ir": 0.0967,
+   "ic_positive_ratio": 0.5312,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{high} - \\\\max(\\\\mathrm{open}, \\\\mathrm{close})) / (\\\\mathrm{high} - \\\\mathrm{low})",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_kup",
+   "ic_mean": 0.013613,
+   "ic_std": 0.245228,
+   "ir": 0.0555,
+   "ic_positive_ratio": 0.5193,
+   "ic_count": 1941,
+   "theme": [
+    "microstructure"
+   ],
+   "formula_latex": "(\\\\mathrm{high} - \\\\max(\\\\mathrm{open}, \\\\mathrm{close})) / \\\\mathrm{open}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_ma20",
+   "ic_mean": 0.00615,
+   "ic_std": 0.294659,
+   "ir": 0.0209,
+   "ic_positive_ratio": 0.5109,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_ma10",
+   "ic_mean": 0.017086,
+   "ic_std": 0.289013,
+   "ir": 0.0591,
+   "ic_positive_ratio": 0.5212,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_ma60",
+   "ic_mean": -0.006887,
+   "ic_std": 0.316085,
+   "ir": -0.0218,
+   "ic_positive_ratio": 0.4729,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_ma5",
+   "ic_mean": 0.023688,
+   "ic_std": 0.284877,
+   "ir": 0.0832,
+   "ic_positive_ratio": 0.5225,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_max10",
+   "ic_mean": -0.000129,
+   "ic_std": 0.285045,
+   "ir": -0.0005,
+   "ic_positive_ratio": 0.499,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_max30",
+   "ic_mean": -0.007333,
+   "ic_std": 0.299401,
+   "ir": -0.0245,
+   "ic_positive_ratio": 0.4885,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_min10",
+   "ic_mean": 0.020513,
+   "ic_std": 0.270372,
+   "ir": 0.0759,
+   "ic_positive_ratio": 0.5259,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_max20",
+   "ic_mean": -0.005692,
+   "ic_std": 0.293502,
+   "ir": -0.0194,
+   "ic_positive_ratio": 0.4917,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_min60",
+   "ic_mean": 0.005003,
+   "ic_std": 0.291784,
+   "ir": 0.0171,
+   "ic_positive_ratio": 0.5074,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_min5",
+   "ic_mean": 0.028044,
+   "ic_std": 0.270862,
+   "ir": 0.1035,
+   "ic_positive_ratio": 0.5338,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_min20",
+   "ic_mean": 0.011599,
+   "ic_std": 0.276574,
+   "ir": 0.0419,
+   "ic_positive_ratio": 0.5078,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_max60",
+   "ic_mean": -0.011606,
+   "ic_std": 0.310079,
+   "ir": -0.0374,
+   "ic_positive_ratio": 0.4724,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_max5",
+   "ic_mean": 0.011572,
+   "ic_std": 0.279734,
+   "ir": 0.0414,
+   "ic_positive_ratio": 0.5276,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_min30",
+   "ic_mean": 0.006561,
+   "ic_std": 0.28044,
+   "ir": 0.0234,
+   "ic_positive_ratio": 0.5152,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rank10",
+   "ic_mean": -0.010826,
+   "ic_std": 0.275225,
+   "ir": -0.0393,
+   "ic_positive_ratio": 0.4855,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_rank}(\\\\mathrm{close}, 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtld10",
+   "ic_mean": 0.019879,
+   "ic_std": 0.2783,
+   "ir": 0.0714,
+   "ic_positive_ratio": 0.5305,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtld5",
+   "ic_mean": 0.022714,
+   "ic_std": 0.278378,
+   "ir": 0.0816,
+   "ic_positive_ratio": 0.5292,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtld30",
+   "ic_mean": 0.005219,
+   "ic_std": 0.288411,
+   "ir": 0.0181,
+   "ic_positive_ratio": 0.5084,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rank20",
+   "ic_mean": -0.002084,
+   "ic_std": 0.278149,
+   "ir": -0.0075,
+   "ic_positive_ratio": 0.4995,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_rank}(\\\\mathrm{close}, 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtlu20",
+   "ic_mean": 0.00464,
+   "ic_std": 0.295704,
+   "ir": 0.0157,
+   "ic_positive_ratio": 0.5135,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.8}}(\\\\mathrm{close}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtlu30",
+   "ic_mean": -0.000783,
+   "ic_std": 0.302202,
+   "ir": -0.0026,
+   "ic_positive_ratio": 0.501,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.8}}(\\\\mathrm{close}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtld20",
+   "ic_mean": 0.008923,
+   "ic_std": 0.283441,
+   "ir": 0.0315,
+   "ic_positive_ratio": 0.5094,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtlu5",
+   "ic_mean": 0.020845,
+   "ic_std": 0.283652,
+   "ir": 0.0735,
+   "ic_positive_ratio": 0.5261,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.8}}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtld60",
+   "ic_mean": -0.002891,
+   "ic_std": 0.306165,
+   "ir": -0.0094,
+   "ic_positive_ratio": 0.4867,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.2}}(\\\\mathrm{close}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtlu60",
+   "ic_mean": -0.00833,
+   "ic_std": 0.312361,
+   "ir": -0.0267,
+   "ic_positive_ratio": 0.4772,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.8}}(\\\\mathrm{close}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_qtlu10",
+   "ic_mean": 0.011886,
+   "ic_std": 0.290441,
+   "ir": 0.0409,
+   "ic_positive_ratio": 0.516,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{quantile}_{{0.8}}(\\\\mathrm{close}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rank5",
+   "ic_mean": -0.021097,
+   "ic_std": 0.270399,
+   "ir": -0.078,
+   "ic_positive_ratio": 0.4765,
+   "ic_count": 1935,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_rank}(\\\\mathrm{close}, 5)",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_resi20",
+   "ic_mean": -0.00615,
+   "ic_std": 0.294659,
+   "ir": -0.0209,
+   "ic_positive_ratio": 0.4891,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 20)) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rank30",
+   "ic_mean": 0.004668,
+   "ic_std": 0.282113,
+   "ir": 0.0165,
+   "ic_positive_ratio": 0.5063,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_rank}(\\\\mathrm{close}, 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_resi30",
+   "ic_mean": -0.000646,
+   "ic_std": 0.299808,
+   "ir": -0.0022,
+   "ic_positive_ratio": 0.501,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 30)) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_resi10",
+   "ic_mean": -0.01709,
+   "ic_std": 0.289006,
+   "ir": -0.0591,
+   "ic_positive_ratio": 0.4788,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 10)) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_resi60",
+   "ic_mean": 0.006887,
+   "ic_std": 0.316085,
+   "ir": 0.0218,
+   "ic_positive_ratio": 0.5271,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 60)) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_roc10",
+   "ic_mean": -0.009047,
+   "ic_std": 0.293355,
+   "ir": -0.0308,
+   "ic_positive_ratio": 0.4827,
+   "ic_count": 1931,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{close}_t / \\\\mathrm{close}_{{t-10}} - 1",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_roc60",
+   "ic_mean": 0.009967,
+   "ic_std": 0.320433,
+   "ir": 0.0311,
+   "ic_positive_ratio": 0.513,
+   "ic_count": 1881,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{close}_t / \\\\mathrm{close}_{{t-60}} - 1",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_roc20",
+   "ic_mean": 0.004755,
+   "ic_std": 0.295952,
+   "ir": 0.0161,
+   "ic_positive_ratio": 0.519,
+   "ic_count": 1921,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{close}_t / \\\\mathrm{close}_{{t-20}} - 1",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_resi5",
+   "ic_mean": -0.023701,
+   "ic_std": 0.284879,
+   "ir": -0.0832,
+   "ic_positive_ratio": 0.4775,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_mean}(\\\\mathrm{close}, 5)) / \\\\mathrm{close}",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_roc5",
+   "ic_mean": -0.019977,
+   "ic_std": 0.286853,
+   "ir": -0.0696,
+   "ic_positive_ratio": 0.4752,
+   "ic_count": 1936,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{close}_t / \\\\mathrm{close}_{{t-5}} - 1",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsqr10",
+   "ic_mean": -0.005586,
+   "ic_std": 0.23135,
+   "ir": -0.0241,
+   "ic_positive_ratio": 0.4762,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, t, 10)^2",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_roc30",
+   "ic_mean": 0.004805,
+   "ic_std": 0.302948,
+   "ir": 0.0159,
+   "ic_positive_ratio": 0.517,
+   "ic_count": 1911,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{close}_t / \\\\mathrm{close}_{{t-30}} - 1",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsqr30",
+   "ic_mean": -0.00462,
+   "ic_std": 0.234444,
+   "ir": -0.0197,
+   "ic_positive_ratio": 0.4958,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, t, 30)^2",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsqr5",
+   "ic_mean": 0.00804,
+   "ic_std": 0.231199,
+   "ir": 0.0348,
+   "ic_positive_ratio": 0.5178,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, t, 5)^2",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rank60",
+   "ic_mean": 0.010873,
+   "ic_std": 0.296692,
+   "ir": 0.0366,
+   "ic_positive_ratio": 0.5292,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_rank}(\\\\mathrm{close}, 60)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsv5",
+   "ic_mean": -0.022648,
+   "ic_std": 0.27078,
+   "ir": -0.0836,
+   "ic_positive_ratio": 0.4667,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 5)) / (\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 5) - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 5))",
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_rsv30",
+   "ic_mean": 0.004878,
+   "ic_std": 0.283801,
+   "ir": 0.0172,
+   "ic_positive_ratio": 0.5094,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 30)) / (\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 30) - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 30))",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsqr60",
+   "ic_mean": -0.002555,
+   "ic_std": 0.241114,
+   "ir": -0.0106,
+   "ic_positive_ratio": 0.4936,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, t, 60)^2",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_std20",
+   "ic_mean": -0.014403,
+   "ic_std": 0.280392,
+   "ir": -0.0514,
+   "ic_positive_ratio": 0.4631,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{close}, 20) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsqr20",
+   "ic_mean": 0.001843,
+   "ic_std": 0.235675,
+   "ir": 0.0078,
+   "ic_positive_ratio": 0.501,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_corr}(\\\\mathrm{close}, t, 20)^2",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsv20",
+   "ic_mean": 7e-05,
+   "ic_std": 0.278273,
+   "ir": 0.0003,
+   "ic_positive_ratio": 0.4979,
+   "ic_count": 1922,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 20)) / (\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 20) - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 20))",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsv10",
+   "ic_mean": -0.008254,
+   "ic_std": 0.275158,
+   "ir": -0.03,
+   "ic_positive_ratio": 0.4938,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 10)) / (\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 10) - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 10))",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_std30",
+   "ic_mean": -0.01511,
+   "ic_std": 0.283257,
+   "ir": -0.0533,
+   "ic_positive_ratio": 0.4707,
+   "ic_count": 1912,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{close}, 30) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_rsv60",
+   "ic_mean": 0.008881,
+   "ic_std": 0.300512,
+   "ir": 0.0296,
+   "ic_positive_ratio": 0.534,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "(\\\\mathrm{close} - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 60)) / (\\\\mathrm{ts\\\\_max}(\\\\mathrm{high}, 60) - \\\\mathrm{ts\\\\_min}(\\\\mathrm{low}, 60))",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_std10",
+   "ic_mean": -0.016777,
+   "ic_std": 0.274082,
+   "ir": -0.0612,
+   "ic_positive_ratio": 0.457,
+   "ic_count": 1932,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{close}, 10) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumd20",
+   "ic_mean": 0.006684,
+   "ic_std": 0.285253,
+   "ir": 0.0234,
+   "ic_positive_ratio": 0.5159,
+   "ic_count": 1921,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{SUMP}_w - \\\\mathrm{SUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumd10",
+   "ic_mean": -0.003574,
+   "ic_std": 0.280277,
+   "ir": -0.0128,
+   "ic_positive_ratio": 0.5075,
+   "ic_count": 1931,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{SUMP}_w - \\\\mathrm{SUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_std5",
+   "ic_mean": -0.01826,
+   "ic_std": 0.265402,
+   "ir": -0.0688,
+   "ic_positive_ratio": 0.4693,
+   "ic_count": 1937,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{close}, 5) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_std60",
+   "ic_mean": -0.016333,
+   "ic_std": 0.290587,
+   "ir": -0.0562,
+   "ic_positive_ratio": 0.4687,
+   "ic_count": 1882,
+   "theme": [
+    "momentum"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{close}, 60) / \\\\mathrm{close}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumn10",
+   "ic_mean": 0.003534,
+   "ic_std": 0.280295,
+   "ir": 0.0126,
+   "ic_positive_ratio": 0.4925,
+   "ic_count": 1931,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumn20",
+   "ic_mean": -0.006671,
+   "ic_std": 0.285298,
+   "ir": -0.0234,
+   "ic_positive_ratio": 0.4846,
+   "ic_count": 1921,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumd5",
+   "ic_mean": -0.016308,
+   "ic_std": 0.275311,
+   "ir": -0.0592,
+   "ic_positive_ratio": 0.4773,
+   "ic_count": 1936,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{SUMP}_w - \\\\mathrm{SUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumd30",
+   "ic_mean": 0.006417,
+   "ic_std": 0.294539,
+   "ir": 0.0218,
+   "ic_positive_ratio": 0.5228,
+   "ic_count": 1911,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{SUMP}_w - \\\\mathrm{SUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumd60",
+   "ic_mean": 0.010625,
+   "ic_std": 0.312306,
+   "ir": 0.034,
+   "ic_positive_ratio": 0.5231,
+   "ic_count": 1881,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\mathrm{SUMP}_w - \\\\mathrm{SUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumn5",
+   "ic_mean": 0.016369,
+   "ic_std": 0.275285,
+   "ir": 0.0595,
+   "ic_positive_ratio": 0.5227,
+   "ic_count": 1936,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sump20",
+   "ic_mean": 0.006704,
+   "ic_std": 0.285267,
+   "ir": 0.0235,
+   "ic_positive_ratio": 0.5159,
+   "ic_count": 1921,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumn30",
+   "ic_mean": -0.006412,
+   "ic_std": 0.294539,
+   "ir": -0.0218,
+   "ic_positive_ratio": 0.4772,
+   "ic_count": 1911,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sump5",
+   "ic_mean": -0.01623,
+   "ic_std": 0.27506,
+   "ir": -0.059,
+   "ic_positive_ratio": 0.4783,
+   "ic_count": 1936,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sumn60",
+   "ic_mean": -0.01064,
+   "ic_std": 0.312298,
+   "ir": -0.0341,
+   "ic_positive_ratio": 0.4769,
+   "ic_count": 1881,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sump60",
+   "ic_mean": 0.010622,
+   "ic_std": 0.312308,
+   "ir": 0.034,
+   "ic_positive_ratio": 0.5231,
+   "ic_count": 1881,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vma10",
+   "ic_mean": 0.003429,
+   "ic_std": 0.238863,
+   "ir": 0.0144,
+   "ic_positive_ratio": 0.5109,
+   "ic_count": 1932,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{volume}, 10) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sump30",
+   "ic_mean": 0.006416,
+   "ic_std": 0.294553,
+   "ir": 0.0218,
+   "ic_positive_ratio": 0.5228,
+   "ic_count": 1911,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_sump10",
+   "ic_mean": -0.003574,
+   "ic_std": 0.2803,
+   "ir": -0.0127,
+   "ic_positive_ratio": 0.5085,
+   "ic_count": 1931,
+   "theme": [
+    "reversal"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta\\\\mathrm{close}, 0) / \\\\sum |\\\\Delta\\\\mathrm{close}|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vma30",
+   "ic_mean": 0.005539,
+   "ic_std": 0.241183,
+   "ir": 0.023,
+   "ic_positive_ratio": 0.5131,
+   "ic_count": 1912,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{volume}, 30) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vstd10",
+   "ic_mean": 0.000763,
+   "ic_std": 0.230033,
+   "ir": 0.0033,
+   "ic_positive_ratio": 0.4959,
+   "ic_count": 1932,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{volume}, 10) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vma20",
+   "ic_mean": 0.00261,
+   "ic_std": 0.239197,
+   "ir": 0.0109,
+   "ic_positive_ratio": 0.5078,
+   "ic_count": 1922,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{volume}, 20) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vstd30",
+   "ic_mean": 0.001197,
+   "ic_std": 0.237116,
+   "ir": 0.005,
+   "ic_positive_ratio": 0.5099,
+   "ic_count": 1912,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{volume}, 30) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vstd5",
+   "ic_mean": -0.006314,
+   "ic_std": 0.222903,
+   "ir": -0.0283,
+   "ic_positive_ratio": 0.4987,
+   "ic_count": 1937,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{volume}, 5) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vstd20",
+   "ic_mean": -0.001686,
+   "ic_std": 0.236944,
+   "ir": -0.0071,
+   "ic_positive_ratio": 0.4995,
+   "ic_count": 1922,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{volume}, 20) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumd20",
+   "ic_mean": -0.001528,
+   "ic_std": 0.233981,
+   "ir": -0.0065,
+   "ic_positive_ratio": 0.5034,
+   "ic_count": 1921,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{VSUMP}_w - \\\\mathrm{VSUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vma60",
+   "ic_mean": 0.008139,
+   "ic_std": 0.243878,
+   "ir": 0.0334,
+   "ic_positive_ratio": 0.5133,
+   "ic_count": 1882,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{volume}, 60) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumd30",
+   "ic_mean": -0.011398,
+   "ic_std": 0.240761,
+   "ir": -0.0473,
+   "ic_positive_ratio": 0.4903,
+   "ic_count": 1911,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{VSUMP}_w - \\\\mathrm{VSUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumn10",
+   "ic_mean": 0.005094,
+   "ic_std": 0.233021,
+   "ir": 0.0219,
+   "ic_positive_ratio": 0.5054,
+   "ic_count": 1931,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumd10",
+   "ic_mean": -0.005094,
+   "ic_std": 0.233021,
+   "ir": -0.0219,
+   "ic_positive_ratio": 0.4946,
+   "ic_count": 1931,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{VSUMP}_w - \\\\mathrm{VSUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsump10",
+   "ic_mean": -0.005094,
+   "ic_std": 0.233021,
+   "ir": -0.0219,
+   "ic_positive_ratio": 0.4946,
+   "ic_count": 1931,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumn60",
+   "ic_mean": 0.008999,
+   "ic_std": 0.239742,
+   "ir": 0.0375,
+   "ic_positive_ratio": 0.5226,
+   "ic_count": 1881,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vma5",
+   "ic_mean": 0.000976,
+   "ic_std": 0.236403,
+   "ir": 0.0041,
+   "ic_positive_ratio": 0.4951,
+   "ic_count": 1937,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_mean}(\\\\mathrm{volume}, 5) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumn5",
+   "ic_mean": 0.007075,
+   "ic_std": 0.231686,
+   "ir": 0.0305,
+   "ic_positive_ratio": 0.5227,
+   "ic_count": 1936,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vstd60",
+   "ic_mean": 0.001587,
+   "ic_std": 0.246761,
+   "ir": 0.0064,
+   "ic_positive_ratio": 0.5096,
+   "ic_count": 1882,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{volume}, 60) / \\\\mathrm{volume}",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumn20",
+   "ic_mean": 0.001528,
+   "ic_std": 0.233981,
+   "ir": 0.0065,
+   "ic_positive_ratio": 0.4961,
+   "ic_count": 1921,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumd60",
+   "ic_mean": -0.008999,
+   "ic_std": 0.239742,
+   "ir": -0.0375,
+   "ic_positive_ratio": 0.4774,
+   "ic_count": 1881,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{VSUMP}_w - \\\\mathrm{VSUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsump20",
+   "ic_mean": -0.001528,
+   "ic_std": 0.233981,
+   "ir": -0.0065,
+   "ic_positive_ratio": 0.5034,
+   "ic_count": 1921,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsump5",
+   "ic_mean": -0.007075,
+   "ic_std": 0.231686,
+   "ir": -0.0305,
+   "ic_positive_ratio": 0.4773,
+   "ic_count": 1936,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumd5",
+   "ic_mean": -0.007075,
+   "ic_std": 0.231686,
+   "ir": -0.0305,
+   "ic_positive_ratio": 0.4773,
+   "ic_count": 1936,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{VSUMP}_w - \\\\mathrm{VSUMN}_w",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsumn30",
+   "ic_mean": 0.011398,
+   "ic_std": 0.240761,
+   "ir": 0.0473,
+   "ic_positive_ratio": 0.5081,
+   "ic_count": 1911,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(-\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsump30",
+   "ic_mean": -0.011398,
+   "ic_std": 0.240761,
+   "ir": -0.0473,
+   "ic_positive_ratio": 0.4903,
+   "ic_count": 1911,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_wvma10",
+   "ic_mean": -0.003902,
+   "ic_std": 0.212941,
+   "ir": -0.0183,
+   "ic_positive_ratio": 0.492,
+   "ic_count": 1931,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{ret}\\\\cdot v, 10) / \\\\mathrm{ts\\\\_mean}(|\\\\mathrm{ret}|\\\\cdot v, 10)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_wvma20",
+   "ic_mean": -0.005281,
+   "ic_std": 0.222198,
+   "ir": -0.0238,
+   "ic_positive_ratio": 0.4862,
+   "ic_count": 1921,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{ret}\\\\cdot v, 20) / \\\\mathrm{ts\\\\_mean}(|\\\\mathrm{ret}|\\\\cdot v, 20)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_vsump60",
+   "ic_mean": -0.008999,
+   "ic_std": 0.239742,
+   "ir": -0.0375,
+   "ic_positive_ratio": 0.4774,
+   "ic_count": 1881,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\sum \\\\max(\\\\Delta v, 0) / \\\\sum |\\\\Delta v|",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_wvma30",
+   "ic_mean": 0.002081,
+   "ic_std": 0.224794,
+   "ir": 0.0093,
+   "ic_positive_ratio": 0.4961,
+   "ic_count": 1911,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{ret}\\\\cdot v, 30) / \\\\mathrm{ts\\\\_mean}(|\\\\mathrm{ret}|\\\\cdot v, 30)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_wvma5",
+   "ic_mean": -0.009988,
+   "ic_std": 0.215389,
+   "ir": -0.0464,
+   "ic_positive_ratio": 0.4757,
+   "ic_count": 1936,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{ret}\\\\cdot v, 5) / \\\\mathrm{ts\\\\_mean}(|\\\\mathrm{ret}|\\\\cdot v, 5)",
+   "_category": "dead"
+  },
+  {
+   "id": "qlib158_wvma60",
+   "ic_mean": -0.004915,
+   "ic_std": 0.239975,
+   "ir": -0.0205,
+   "ic_positive_ratio": 0.4854,
+   "ic_count": 1881,
+   "theme": [
+    "volume",
+    "volatility"
+   ],
+   "formula_latex": "\\\\mathrm{ts\\\\_std}(\\\\mathrm{ret}\\\\cdot v, 60) / \\\\mathrm{ts\\\\_mean}(|\\\\mathrm{ret}|\\\\cdot v, 60)",
+   "_category": "dead"
+  }
+ ],
+ "skipped": [],
+ "meta": {
+  "universe": "csi300-akshare30",
+  "survivorship_bias": true,
+  "pit_membership": false,
+  "degraded": true,
+  "constituent_source": "vibe-trading csi300 fallback roster, akshare/sina qfq data",
+  "constituent_count": 30,
+  "price_adjustment": "qfq"
+ },
+ "wall_seconds": 0.68
+}

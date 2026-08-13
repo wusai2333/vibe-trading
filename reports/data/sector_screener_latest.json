@@ -1,0 +1,151 @@
+{
+ "positioning": "relative sector-rotation ranking; no return forecast",
+ "sectors_ranked": 10,
+ "top_sectors": [
+  {
+   "code": "sh000933",
+   "sector": "医药卫生",
+   "close": 8256.89,
+   "mom_5d_pct": 4.07,
+   "mom_20d_pct": 7.32,
+   "mom_60d_pct": 5.54,
+   "mom_20d_pct_rank": 3,
+   "mom_60d_pct_rank": 1,
+   "score": 2.0
+  },
+  {
+   "code": "sh000928",
+   "sector": "能源",
+   "close": 3334.66,
+   "mom_5d_pct": 0.2,
+   "mom_20d_pct": 8.14,
+   "mom_60d_pct": -1.72,
+   "mom_20d_pct_rank": 2,
+   "mom_60d_pct_rank": 4,
+   "score": 3.0
+  },
+  {
+   "code": "sh000929",
+   "sector": "材料",
+   "close": 4528.62,
+   "mom_5d_pct": 7.66,
+   "mom_20d_pct": 8.77,
+   "mom_60d_pct": -7.67,
+   "mom_20d_pct_rank": 1,
+   "mom_60d_pct_rank": 5,
+   "score": 3.0
+  }
+ ],
+ "all_sectors": [
+  {
+   "code": "sh000933",
+   "sector": "医药卫生",
+   "close": 8256.89,
+   "mom_5d_pct": 4.07,
+   "mom_20d_pct": 7.32,
+   "mom_60d_pct": 5.54,
+   "mom_20d_pct_rank": 3,
+   "mom_60d_pct_rank": 1,
+   "score": 2.0
+  },
+  {
+   "code": "sh000928",
+   "sector": "能源",
+   "close": 3334.66,
+   "mom_5d_pct": 0.2,
+   "mom_20d_pct": 8.14,
+   "mom_60d_pct": -1.72,
+   "mom_20d_pct_rank": 2,
+   "mom_60d_pct_rank": 4,
+   "score": 3.0
+  },
+  {
+   "code": "sh000929",
+   "sector": "材料",
+   "close": 4528.62,
+   "mom_5d_pct": 7.66,
+   "mom_20d_pct": 8.77,
+   "mom_60d_pct": -7.67,
+   "mom_20d_pct_rank": 1,
+   "mom_60d_pct_rank": 5,
+   "score": 3.0
+  },
+  {
+   "code": "sh000934",
+   "sector": "金融地产",
+   "close": 5612.58,
+   "mom_5d_pct": -2.58,
+   "mom_20d_pct": 2.41,
+   "mom_60d_pct": -1.09,
+   "mom_20d_pct_rank": 5,
+   "mom_60d_pct_rank": 3,
+   "score": 4.0
+  },
+  {
+   "code": "sh000932",
+   "sector": "主要消费",
+   "close": 12624.3,
+   "mom_5d_pct": -3.17,
+   "mom_20d_pct": 5.48,
+   "mom_60d_pct": -8.85,
+   "mom_20d_pct_rank": 4,
+   "mom_60d_pct_rank": 7,
+   "score": 5.5
+  },
+  {
+   "code": "sh000935",
+   "sector": "信息技术",
+   "close": 8227.97,
+   "mom_5d_pct": 10.09,
+   "mom_20d_pct": -14.36,
+   "mom_60d_pct": 1.09,
+   "mom_20d_pct_rank": 10,
+   "mom_60d_pct_rank": 2,
+   "score": 6.0
+  },
+  {
+   "code": "sh000937",
+   "sector": "公用事业",
+   "close": 2515.39,
+   "mom_5d_pct": -2.32,
+   "mom_20d_pct": 1.22,
+   "mom_60d_pct": -8.8,
+   "mom_20d_pct_rank": 6,
+   "mom_60d_pct_rank": 6,
+   "score": 6.0
+  },
+  {
+   "code": "sh000930",
+   "sector": "工业",
+   "close": 3314.98,
+   "mom_5d_pct": 1.79,
+   "mom_20d_pct": 0.3,
+   "mom_60d_pct": -13.73,
+   "mom_20d_pct_rank": 7,
+   "mom_60d_pct_rank": 10,
+   "score": 8.5
+  },
+  {
+   "code": "sh000931",
+   "sector": "可选消费",
+   "close": 5147.91,
+   "mom_5d_pct": -2.73,
+   "mom_20d_pct": -0.3,
+   "mom_60d_pct": -10.56,
+   "mom_20d_pct_rank": 8,
+   "mom_60d_pct_rank": 9,
+   "score": 8.5
+  },
+  {
+   "code": "sh000936",
+   "sector": "电信服务",
+   "close": 12445.01,
+   "mom_5d_pct": 8.11,
+   "mom_20d_pct": -10.98,
+   "mom_60d_pct": -9.69,
+   "mom_20d_pct_rank": 9,
+   "mom_60d_pct_rank": 8,
+   "score": 8.5
+  }
+ ]
+}

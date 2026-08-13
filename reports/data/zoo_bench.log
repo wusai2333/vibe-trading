@@ -1,0 +1,11 @@
+panel loaded: 288 names x 1942 days
+zoos: ['academic', 'alpha101', 'fundamental', 'gtja191', 'qlib158']
+academic: {'tested': 12, 'skipped': 0, 'alive': 0, 'reversed': 0, 'dead': 12, 'wall_seconds': 1.2}
+alpha101: {'tested': 82, 'skipped': 19, 'alive': 17, 'reversed': 1, 'dead': 64, 'wall_seconds': 3.1}
+fundamental: {'tested': 0, 'skipped': 4, 'alive': 0, 'reversed': 0, 'dead': 0, 'wall_seconds': 0.0}
+gtja191: {'tested': 151, 'skipped': 40, 'alive': 8, 'reversed': 13, 'dead': 130, 'wall_seconds': 2.6}
+qlib158: {'tested': 154, 'skipped': 0, 'alive': 3, 'reversed': 18, 'dead': 133, 'wall_seconds': 1.9}
+
+SAVED reports/data/csi300_zoo_bench.json
+{"academic": {"tested": 12, "skipped": 0, "alive": 0, "reversed": 0, "dead": 12, "wall_seconds": 1.2}, "alpha101": {"tested": 82, "skipped": 19, "alive": 17, "reversed": 1, "dead": 64, "wall_seconds": 3.1}, "fundamental": {"tested": 0, "skipped": 4, "alive": 0, "reversed": 0, "dead": 0, "wall_seconds": 0.0}, "gtja191": {"tested": 151, "skipped": 40, "alive": 8, "reversed": 13, "dead": 130, "wall_seconds": 2.6}, "qlib158": {"tested": 154, "skipped": 0, "alive": 3, "reversed": 18, "dead": 133, "wall_seconds": 1.9}}
+EXIT=0

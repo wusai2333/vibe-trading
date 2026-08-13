@@ -1,0 +1,321 @@
+{
+ "universe": {
+  "names": 288,
+  "days": 1942
+ },
+ "zoo_summary": {
+  "academic": {
+   "tested": 12,
+   "skipped": 0,
+   "alive": 0,
+   "reversed": 0,
+   "dead": 12,
+   "wall_seconds": 1.2
+  },
+  "alpha101": {
+   "tested": 82,
+   "skipped": 19,
+   "alive": 17,
+   "reversed": 1,
+   "dead": 64,
+   "wall_seconds": 3.1
+  },
+  "fundamental": {
+   "tested": 0,
+   "skipped": 4,
+   "alive": 0,
+   "reversed": 0,
+   "dead": 0,
+   "wall_seconds": 0.0
+  },
+  "gtja191": {
+   "tested": 151,
+   "skipped": 40,
+   "alive": 8,
+   "reversed": 13,
+   "dead": 130,
+   "wall_seconds": 2.6
+  },
+  "qlib158": {
+   "tested": 154,
+   "skipped": 0,
+   "alive": 3,
+   "reversed": 18,
+   "dead": 133,
+   "wall_seconds": 1.9
+  }
+ },
+ "top30_by_abs_ir": [
+  {
+   "id": "gtja191_171",
+   "zoo": "gtja191",
+   "ir": 0.2604,
+   "ic_mean": 0.042267,
+   "ic_positive_ratio": 0.6177,
+   "ic_count": 1941,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_083",
+   "zoo": "alpha101",
+   "ir": 0.2573,
+   "ic_mean": 0.045256,
+   "ic_positive_ratio": 0.6155,
+   "ic_count": 1935,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_054",
+   "zoo": "alpha101",
+   "ir": 0.242,
+   "ic_mean": 0.038348,
+   "ic_positive_ratio": 0.61,
+   "ic_count": 1941,
+   "_category": "alive"
+  },
+  {
+   "id": "qlib158_ksft2",
+   "zoo": "qlib158",
+   "ir": -0.2418,
+   "ic_mean": -0.04052,
+   "ic_positive_ratio": 0.3843,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_ksft",
+   "zoo": "qlib158",
+   "ir": -0.2409,
+   "ic_mean": -0.044595,
+   "ic_positive_ratio": 0.3818,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_klow",
+   "zoo": "qlib158",
+   "ir": -0.2403,
+   "ic_mean": -0.034323,
+   "ic_positive_ratio": 0.3941,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "gtja191_111",
+   "zoo": "gtja191",
+   "ir": 0.2217,
+   "ic_mean": 0.034491,
+   "ic_positive_ratio": 0.6005,
+   "ic_count": 1940,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_060",
+   "zoo": "alpha101",
+   "ir": 0.2113,
+   "ic_mean": 0.033104,
+   "ic_positive_ratio": 0.5942,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_042",
+   "zoo": "alpha101",
+   "ir": 0.2046,
+   "ic_mean": 0.037608,
+   "ic_positive_ratio": 0.5837,
+   "ic_count": 1941,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_025",
+   "zoo": "alpha101",
+   "ir": 0.2021,
+   "ic_mean": 0.034528,
+   "ic_positive_ratio": 0.5884,
+   "ic_count": 1922,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_057",
+   "zoo": "alpha101",
+   "ir": 0.2014,
+   "ic_mean": 0.03595,
+   "ic_positive_ratio": 0.584,
+   "ic_count": 1911,
+   "_category": "alive"
+  },
+  {
+   "id": "gtja191_178",
+   "zoo": "gtja191",
+   "ir": -0.1962,
+   "ic_mean": -0.033446,
+   "ic_positive_ratio": 0.4072,
+   "ic_count": 1940,
+   "_category": "reversed"
+  },
+  {
+   "id": "alpha101_033",
+   "zoo": "alpha101",
+   "ir": 0.1908,
+   "ic_mean": 0.035018,
+   "ic_positive_ratio": 0.592,
+   "ic_count": 1941,
+   "_category": "alive"
+  },
+  {
+   "id": "qlib158_kmid",
+   "zoo": "qlib158",
+   "ir": -0.1902,
+   "ic_mean": -0.034933,
+   "ic_positive_ratio": 0.4075,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "alpha101_053",
+   "zoo": "alpha101",
+   "ir": 0.1722,
+   "ic_mean": 0.026556,
+   "ic_positive_ratio": 0.5792,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "qlib158_kmid2",
+   "zoo": "qlib158",
+   "ir": -0.1703,
+   "ic_mean": -0.029897,
+   "ic_positive_ratio": 0.4173,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "alpha101_101",
+   "zoo": "alpha101",
+   "ir": -0.1701,
+   "ic_mean": -0.029872,
+   "ic_positive_ratio": 0.4163,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "gtja191_150",
+   "zoo": "gtja191",
+   "ir": -0.1684,
+   "ic_mean": -0.026132,
+   "ic_positive_ratio": 0.4323,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "alpha101_038",
+   "zoo": "alpha101",
+   "ir": 0.163,
+   "ic_mean": 0.029772,
+   "ic_positive_ratio": 0.5647,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_018",
+   "zoo": "alpha101",
+   "ir": 0.1595,
+   "ic_mean": 0.026283,
+   "ic_positive_ratio": 0.5735,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "gtja191_002",
+   "zoo": "gtja191",
+   "ir": 0.1593,
+   "ic_mean": 0.026072,
+   "ic_positive_ratio": 0.5943,
+   "ic_count": 1940,
+   "_category": "alive"
+  },
+  {
+   "id": "qlib158_min5",
+   "zoo": "qlib158",
+   "ir": 0.1591,
+   "ic_mean": 0.028668,
+   "ic_positive_ratio": 0.5622,
+   "ic_count": 1937,
+   "_category": "alive"
+  },
+  {
+   "id": "qlib158_klow2",
+   "zoo": "qlib158",
+   "ir": -0.1585,
+   "ic_mean": -0.020792,
+   "ic_positive_ratio": 0.4323,
+   "ic_count": 1941,
+   "_category": "reversed"
+  },
+  {
+   "id": "gtja191_137",
+   "zoo": "gtja191",
+   "ir": -0.1541,
+   "ic_mean": -0.02728,
+   "ic_positive_ratio": 0.4227,
+   "ic_count": 1940,
+   "_category": "reversed"
+  },
+  {
+   "id": "qlib158_cntp5",
+   "zoo": "qlib158",
+   "ir": -0.1537,
+   "ic_mean": -0.023229,
+   "ic_positive_ratio": 0.4502,
+   "ic_count": 1937,
+   "_category": "reversed"
+  },
+  {
+   "id": "alpha101_005",
+   "zoo": "alpha101",
+   "ir": 0.153,
+   "ic_mean": 0.028096,
+   "ic_positive_ratio": 0.5611,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_024",
+   "zoo": "alpha101",
+   "ir": 0.152,
+   "ic_mean": 0.024989,
+   "ic_positive_ratio": 0.5614,
+   "ic_count": 1938,
+   "_category": "alive"
+  },
+  {
+   "id": "gtja191_054",
+   "zoo": "gtja191",
+   "ir": 0.1515,
+   "ic_mean": 0.025324,
+   "ic_positive_ratio": 0.573,
+   "ic_count": 1932,
+   "_category": "alive"
+  },
+  {
+   "id": "alpha101_037",
+   "zoo": "alpha101",
+   "ir": 0.1505,
+   "ic_mean": 0.023548,
+   "ic_positive_ratio": 0.5675,
+   "ic_count": 1741,
+   "_category": "alive"
+  },
+  {
+   "id": "gtja191_184",
+   "zoo": "gtja191",
+   "ir": 0.1505,
+   "ic_mean": 0.023548,
+   "ic_positive_ratio": 0.5675,
+   "ic_count": 1741,
+   "_category": "alive"
+  }
+ ],
+ "multiple_testing_per_zoo": {}
+}

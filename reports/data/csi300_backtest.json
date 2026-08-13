@@ -1,0 +1,41 @@
+{
+ "description": "gtja191_171 on full CSI300 (current constituents), ashare qfq panel",
+ "universe": {
+  "requested": 288,
+  "fetched": 288,
+  "days": 1942,
+  "start": "2018-01-02",
+  "end": "2025-12-31"
+ },
+ "results": {
+  "raw_top5": {
+   "total_pct": 381.3,
+   "cagr_pct": 21.7,
+   "sharpe": 0.55,
+   "max_dd_pct": -39.9,
+   "ann_turnover": 46.6
+  },
+  "smooth20_top15": {
+   "total_pct": 246.2,
+   "cagr_pct": 17.0,
+   "sharpe": 0.53,
+   "max_dd_pct": -41.9,
+   "ann_turnover": 25.8
+  },
+  "smooth10_top10": {
+   "total_pct": 425.1,
+   "cagr_pct": 23.2,
+   "sharpe": 0.66,
+   "max_dd_pct": -35.4,
+   "ann_turnover": 38.6
+  },
+  "benchmark_equal_weight": {
+   "total_pct": 829.6,
+   "cagr_pct": 32.2,
+   "sharpe": 1.21,
+   "max_dd_pct": -25.8,
+   "ann_turnover": 0.0
+  }
+ },
+ "caveat": "current-roster survivorship bias; free token has no point-in-time membership"
+}

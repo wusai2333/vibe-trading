@@ -1,0 +1,139 @@
+{
+ "as_of": "2026-08-07",
+ "universe": {
+  "requested": 288,
+  "fetched": 288,
+  "start": "2025-07-03",
+  "smooth_days": 10,
+  "factor": "gtja191_171"
+ },
+ "positioning": "relative-rank filter only; no absolute-alpha claim",
+ "top_picks": [
+  {
+   "rank": 1,
+   "symbol": "000425.SZ",
+   "factor": -0.9163,
+   "pct_rank": 99.5,
+   "mom_20d_pct": -1.5,
+   "last_close": 8.3
+  },
+  {
+   "rank": 2,
+   "symbol": "688072.SH",
+   "factor": -1.176,
+   "pct_rank": 98.9,
+   "mom_20d_pct": null,
+   "last_close": 690.65
+  },
+  {
+   "rank": 3,
+   "symbol": "000977.SZ",
+   "factor": -1.1812,
+   "pct_rank": 98.4,
+   "mom_20d_pct": -12.9,
+   "last_close": 77.99
+  },
+  {
+   "rank": 4,
+   "symbol": "603501.SH",
+   "factor": -1.2613,
+   "pct_rank": 97.9,
+   "mom_20d_pct": -13.0,
+   "last_close": 89.76
+  },
+  {
+   "rank": 5,
+   "symbol": "600010.SH",
+   "factor": -1.3917,
+   "pct_rank": 97.3,
+   "mom_20d_pct": 5.1,
+   "last_close": 2.28
+  },
+  {
+   "rank": 6,
+   "symbol": "301165.SZ",
+   "factor": -1.4035,
+   "pct_rank": 96.8,
+   "mom_20d_pct": 14.1,
+   "last_close": 118.17
+  },
+  {
+   "rank": 7,
+   "symbol": "300498.SZ",
+   "factor": -1.4485,
+   "pct_rank": 96.3,
+   "mom_20d_pct": 1.6,
+   "last_close": 13.56
+  },
+  {
+   "rank": 8,
+   "symbol": "603893.SH",
+   "factor": -1.4851,
+   "pct_rank": 95.7,
+   "mom_20d_pct": -1.7,
+   "last_close": 205.32
+  },
+  {
+   "rank": 9,
+   "symbol": "601100.SH",
+   "factor": -1.5156,
+   "pct_rank": 95.2,
+   "mom_20d_pct": -6.3,
+   "last_close": 104.0
+  },
+  {
+   "rank": 10,
+   "symbol": "300433.SZ",
+   "factor": -1.5186,
+   "pct_rank": 94.7,
+   "mom_20d_pct": -17.7,
+   "last_close": 35.9
+  },
+  {
+   "rank": 11,
+   "symbol": "000938.SZ",
+   "factor": -1.525,
+   "pct_rank": 94.1,
+   "mom_20d_pct": -1.1,
+   "last_close": 38.0
+  },
+  {
+   "rank": 12,
+   "symbol": "002241.SZ",
+   "factor": -1.5536,
+   "pct_rank": 93.6,
+   "mom_20d_pct": 3.2,
+   "last_close": 23.29
+  },
+  {
+   "rank": 13,
+   "symbol": "688111.SH",
+   "factor": -1.6312,
+   "pct_rank": 93.0,
+   "mom_20d_pct": 13.6,
+   "last_close": 265.65
+  },
+  {
+   "rank": 14,
+   "symbol": "300408.SZ",
+   "factor": -1.6647,
+   "pct_rank": 92.5,
+   "mom_20d_pct": 0.3,
+   "last_close": 127.39
+  },
+  {
+   "rank": 15,
+   "symbol": "002422.SZ",
+   "factor": -1.6772,
+   "pct_rank": 92.0,
+   "mom_20d_pct": 3.1,
+   "last_close": 45.44
+  }
+ ],
+ "pool_stats": {
+  "names_ranked": 187,
+  "factor_median": -3.1327,
+  "factor_max": -0.9163,
+  "factor_min": -23.9114
+ }
+}

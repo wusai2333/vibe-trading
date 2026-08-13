@@ -1,0 +1,221 @@
+{
+ "as_of": "2026-08-07",
+ "blend": {
+  "factors": 12,
+  "smooth_days": 10,
+  "weighting": "IC-weighted (full-sample IR, sign included)"
+ },
+ "positioning": "relative-rank filter only; no absolute-alpha claim",
+ "pool_stats": {
+  "names_scored": 182,
+  "score_median": 0.0182
+ },
+ "top_picks": [
+  {
+   "rank": 1,
+   "symbol": "688072.SH",
+   "name": "拓荆科技",
+   "sector": "信息技术",
+   "score": 1.3784,
+   "pct_rank": 99.5,
+   "mom_20d_pct": null,
+   "last_close": 690.65
+  },
+  {
+   "rank": 2,
+   "symbol": "600010.SH",
+   "name": "包钢股份",
+   "sector": "材料",
+   "score": 1.088,
+   "pct_rank": 98.9,
+   "mom_20d_pct": 5.1,
+   "last_close": 2.28
+  },
+  {
+   "rank": 3,
+   "symbol": "688036.SH",
+   "name": "传音控股",
+   "sector": "信息技术",
+   "score": 0.9178,
+   "pct_rank": 98.4,
+   "mom_20d_pct": -16.7,
+   "last_close": 57.03
+  },
+  {
+   "rank": 4,
+   "symbol": "000425.SZ",
+   "name": "徐工机械",
+   "sector": "工业",
+   "score": 0.8805,
+   "pct_rank": 97.8,
+   "mom_20d_pct": -1.5,
+   "last_close": 8.3
+  },
+  {
+   "rank": 5,
+   "symbol": "001280.SZ",
+   "name": "中国铀业",
+   "sector": "材料",
+   "score": 0.7809,
+   "pct_rank": 97.3,
+   "mom_20d_pct": 5.3,
+   "last_close": 65.38
+  },
+  {
+   "rank": 6,
+   "symbol": "600039.SH",
+   "name": "四川路桥",
+   "sector": "工业",
+   "score": 0.7691,
+   "pct_rank": 96.7,
+   "mom_20d_pct": 4.5,
+   "last_close": 8.34
+  },
+  {
+   "rank": 7,
+   "symbol": "000977.SZ",
+   "name": "浪潮信息",
+   "sector": "信息技术",
+   "score": 0.7564,
+   "pct_rank": 96.2,
+   "mom_20d_pct": -12.9,
+   "last_close": 77.99
+  },
+  {
+   "rank": 8,
+   "symbol": "600019.SH",
+   "name": "宝钢股份",
+   "sector": "材料",
+   "score": 0.7447,
+   "pct_rank": 95.6,
+   "mom_20d_pct": 5.1,
+   "last_close": 5.76
+  },
+  {
+   "rank": 9,
+   "symbol": "000157.SZ",
+   "name": "中联重科",
+   "sector": "工业",
+   "score": 0.7303,
+   "pct_rank": 95.1,
+   "mom_20d_pct": 2.3,
+   "last_close": 7.22
+  },
+  {
+   "rank": 10,
+   "symbol": "002311.SZ",
+   "name": "海大集团",
+   "sector": "主要消费",
+   "score": 0.7203,
+   "pct_rank": 94.5,
+   "mom_20d_pct": 2.2,
+   "last_close": 45.91
+  },
+  {
+   "rank": 11,
+   "symbol": "002241.SZ",
+   "name": "歌尔股份",
+   "sector": "信息技术",
+   "score": 0.6972,
+   "pct_rank": 94.0,
+   "mom_20d_pct": 3.2,
+   "last_close": 23.29
+  },
+  {
+   "rank": 12,
+   "symbol": "601021.SH",
+   "name": "春秋航空",
+   "sector": "工业",
+   "score": 0.6905,
+   "pct_rank": 93.4,
+   "mom_20d_pct": 0.3,
+   "last_close": 45.67
+  },
+  {
+   "rank": 13,
+   "symbol": "601766.SH",
+   "name": "中国中车",
+   "sector": "工业",
+   "score": 0.6394,
+   "pct_rank": 92.9,
+   "mom_20d_pct": 6.9,
+   "last_close": 5.88
+  },
+  {
+   "rank": 14,
+   "symbol": "601111.SH",
+   "name": "中国国航",
+   "sector": "工业",
+   "score": 0.6335,
+   "pct_rank": 92.3,
+   "mom_20d_pct": 1.2,
+   "last_close": 6.07
+  },
+  {
+   "rank": 15,
+   "symbol": "600025.SH",
+   "name": "华能水电",
+   "sector": "公用事业",
+   "score": 0.6326,
+   "pct_rank": 91.8,
+   "mom_20d_pct": 0.5,
+   "last_close": 9.67
+  }
+ ],
+ "sector_ranking": [
+  {
+   "sector": "公用事业",
+   "avg_score": 0.2875,
+   "names_ranked": 5,
+   "in_top_picks": 1
+  },
+  {
+   "sector": "主要消费",
+   "avg_score": 0.1318,
+   "names_ranked": 11,
+   "in_top_picks": 1
+  },
+  {
+   "sector": "医药卫生",
+   "avg_score": 0.0754,
+   "names_ranked": 7,
+   "in_top_picks": 0
+  },
+  {
+   "sector": "金融地产",
+   "avg_score": 0.0695,
+   "names_ranked": 23,
+   "in_top_picks": 0
+  },
+  {
+   "sector": "工业",
+   "avg_score": 0.0521,
+   "names_ranked": 46,
+   "in_top_picks": 6
+  },
+  {
+   "sector": "可选消费",
+   "avg_score": 0.0383,
+   "names_ranked": 11,
+   "in_top_picks": 0
+  },
+  {
+   "sector": "电信服务",
+   "avg_score": -0.0602,
+   "names_ranked": 14,
+   "in_top_picks": 0
+  },
+  {
+   "sector": "信息技术",
+   "avg_score": -0.0668,
+   "names_ranked": 37,
+   "in_top_picks": 4
+  },
+  {
+   "sector": "材料",
+   "avg_score": -0.2244,
+   "names_ranked": 26,
+   "in_top_picks": 3
+  }
+ ]
+}
